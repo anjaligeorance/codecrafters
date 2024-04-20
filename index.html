@@ -40,29 +40,33 @@
       <section class="preferences" id="style-section">
         <h3>Tell us about your style</h3>
         <form id="user-preferences">
-          <label for="style"><i>What's your style preference?</i></label>
+          <label for="gender"><i>Select your gender: </i></label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <br>
+          <label for="style"><i>Is there a specific occasion?</i></label>
           <select id="style" name="style">
-            <option value="professional">Professional</option>
+            <option value="work">Work</option>
             <option value="casual">Casual</option>
-            <option value="trendy">Trendy</option>
-            <option value="elegant">Elegant</option>
-            <option value="other">Other (specify in the box below)</option>
+            <option value="beach">Beach</option>
+            <option value="evening">Evening</option>
+            <option value="wedding">Wedding</option>
+            <option value="gym">Gym</option>
+            <option value="yoga">Yoga</option>
           </select>
           <br>
-          <label for="other-style"><i>If "Other", specify your style:</i></label>
-          <input type="text" id="other-style" name="other_style" disabled>
-          <br>
-          <label for="occasion"><i>Is there a specific occasion?</i></label>
-          <select id="occasion" name="occasion">
-            <option value="none">No occasion, everyday wear</option>
-            <option value="work">Work meeting/event</option>
-            <option value="dinner">Dinner date/party</option>
-            <option value="workout">Workout session</option>
-            <option value="other">Other (specify in the box below)</option>
+          <label for="clothtype"><i>Select your preffered cloth type:</i></label>
+          <select id="clothtype" name="clothtype">
+            <option value="wool">Wool</option>
+            <option value="cotton">Cotton</option>
+            <option value="linen">linen</option>
+            <option value="denim">Denim</option>
+            <option value="silk">Silk</option>
+            <option value="polyster">Polyster</option>
           </select>
           <br>
-          <label for="other-occasion"><i>If "Other", specify the occasion:</i></label>
-          <input type="text" id="other-occasion" name="other_occasion" disabled>
           <br><br>
           <button type="submit">Get Outfit Suggestions</button>
         </form>
