@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #222;
@@ -13,7 +14,7 @@ header {
 
 header h1 {
   font-size: 3rem;
-  color: #ff4081;
+  color: #7bbbdc;
 }
 
 header p {
@@ -35,16 +36,16 @@ main {
 
 .hero h2 {
   font-size: 2.5rem;
-  color: #ff4081;
+  color: #1d6d92;
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #333; /* Change text color to black for better contrast */
+  color: #dee9e7; /* Change text color to black for better contrast */
 }
 
 button {
-  background-color: #ff4081;
+  background-color: #1d6d92;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -55,7 +56,7 @@ button {
 }
 
 button:hover {
-  background-color: #d81b60;
+  background-color: #1d6d92;
 }
 
 .how-it-works {
@@ -75,7 +76,7 @@ ul {
 
 li {
   margin-bottom: 20px;
-  background-color: #edc9d5; /* Background color for the box */
+  background-color: #1d266d; /* Background color for the box */
   padding: 20px; /* Padding for the box */
   border-radius: 10px; /* Rounded corners */
 }
@@ -87,7 +88,7 @@ li img {
 
 li h4 {
   font-size: 1.4rem;
-  color: #ff4081;
+  color: #1d6d92;
   margin-top: 10px;
 }
 
@@ -103,12 +104,12 @@ li p {
 
 .preferences h3 {
   font-size: 2rem;
-  color: #ff4081;
+  color: #1d6d92;
 }
 
 .preferences label {
   font-size: 1.2rem;
-  color: #333; /* Change text color to black for better contrast */
+  color: #333333; /* Change text color to black for better contrast */
 }
 
 select, input {
