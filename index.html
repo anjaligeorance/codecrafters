@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wardrobe AI - Your AI-powered Stylist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><i>Welcome to your AI-powered Stylist!</i></h1>
+    <p><i>Look fabulous and feel confident every day with outfit suggestions tailored just for you.</i></p>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Look effortlessly stylish, every day.</h2>
+      <p><i>Let Wardrobe AI curate your outfit based on the latest trends, weather, and your personal style.</i></p>
+      <button onclick="scrollToStyle()">Get Started</button>
+      <section class="how-it-works">
+        <centre><h2>How it Works</h2></centre><br>
+
+        <ul>
+          <li>
+            <img src="E:\AIHack\codecrafters\a\OIG4.jpeg" alt="Style Profile Icon">
+            <h4>Style Profile</h4>
+            <p>Tell us about your preferences: body type, favorite colors, and style (professional, casual, etc.).</p>
+          </li>
+          <li>
+            <img src="icons/weather-wizard.svg" alt="Weather Wizard Icon">
+            <h4>Weather Wizard</h4>
+            <p>We consider the current weather (location services enabled) to suggest weather-appropriate outfits.</p>
+          </li>
+          <li>
+            <img src="icons/trendsetter.svg" alt="Trendsetter's Touch Icon">
+            <h4>Trendsetter's Touch</h4>
+            <p>Our AI stays on top of fashion trends to suggest stylish pieces that reflect your taste.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="preferences" id="style-section">
+        <h3>Tell us about your style</h3>
+        <form id="user-preferences">
+          <label for="style"><i>What's your style preference?</i></label>
+          <select id="style" name="style">
+            <option value="professional">Professional</option>
+            <option value="casual">Casual</option>
+            <option value="trendy">Trendy</option>
+            <option value="elegant">Elegant</option>
+            <option value="other">Other (specify in the box below)</option>
+          </select>
+          <br>
+          <label for="other-style"><i>If "Other", specify your style:</i></label>
+          <input type="text" id="other-style" name="other_style" disabled>
+          <br>
+          <label for="occasion"><i>Is there a specific occasion?</i></label>
+          <select id="occasion" name="occasion">
+            <option value="none">No occasion, everyday wear</option>
+            <option value="work">Work meeting/event</option>
+            <option value="dinner">Dinner date/party</option>
+            <option value="workout">Workout session</option>
+            <option value="other">Other (specify in the box below)</option>
+          </select>
+          <br>
+          <label for="other-occasion"><i>If "Other", specify the occasion:</i></label>
+          <input type="text" id="other-occasion" name="other_occasion" disabled>
+          <br><br>
+          <button type="submit">Get Outfit Suggestions</button>
+        </form>
+      </section>
+    </section>
+  </main>
+  <footer>
+ 
+  </footer>
+  <script>
+    function scrollToStyle() {
+      var styleSection = document.getElementById('style-section');
+      styleSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
