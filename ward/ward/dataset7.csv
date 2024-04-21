@@ -1,0 +1,21 @@
+Material,Occasion,Dress Type,gender
+10,22,"sweatshirt,jeans",0
+11,22,"tshirt,shorts",0
+12,23,"tshirt,leggings",0
+13,21,"blazer,suit",0
+11,25,dress,0
+14,22,dress,0
+11,24,"pants,shirt",0
+15,26,"suit,dress",0
+15,27,"tshirt,palazzo",0
+11,28,"tshirt,jogger",0
+10,22,"cropped hoodie,joggers",1
+11,22,"tshirt ,pants",1
+12,23,"tank top,capri pants",1
+13,21,"tshirt,jeans",1
+11,25,"tops,trousers",1
+14,22,"crop top,jeans",1
+11,24,"tshirt,palazzo",1
+15,26,gown,1
+15,27,"tank top,leggins",1
+11,28,"tshirt,shorts",1

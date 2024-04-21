@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wardrobe AI - Your AI-powered Stylist</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+ <header>
+    <h1><i>Welcome to your AI-powered Stylist!</i></h1>
+    <p><i>Look fabulous and feel confident every day with outfit suggestions tailored just for you.</i></p>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Look effortlessly stylish, every day.</h2>
+      <p><i>Let Wardrobe AI curate your outfit based on the latest trends, weather, and your personal style.</i></p>
+      <button onclick="scrollToStyle()">Get Started</button>
+      <section class="how-it-works">
+        <centre><h2>How it Works</h2></centre><br>
+
+        <ul>
+          <li>
+            <img src="{% static 'styleprofile.jpeg' %}" alt="Style Profile Icon">
+            <h4>Style Profile</h4>
+            <p>Tell us about your preferences: body type, favorite colors, and style (professional, casual, etc.).</p>
+          </li>
+          <li>
+            <img src="{% static 'weather.jpeg' %}" alt="Weather Wizard Icon">
+            <h4>Weather Wizard</h4>
+            <p>We consider the current weather (location services enabled) to suggest weather-appropriate outfits.</p>
+          </li>
+          <li>
+            <img src="{% static 'trendsetter.jpeg' %}" height=351px alt="Trendsetter's Touch Icon">
+            <h4>Trendsetter's Touch</h4>
+            <p>Our AI stays on top of fashion trends to suggest stylish pieces that reflect your taste.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="preferences" id="style-section">
+        <h3>Tell us about your style</h3>
+        {% csrf_token %}
+        <form id="user-preferences" onsubmit="event.preventDefault(); getOutfitSuggestions(event); loadNewPage();">
+          <label for="gender"><i>Select your gender: </i></label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <br>
+          <label for="style"><i>Is there a specific occasion?</i></label>
+          <select id="style" name="style">
+            <option value="work">Work</option>
+            <option value="casual">Casual</option>
+            <option value="beach">Beach</option>
+            <option value="evening">Evening</option>
+            <option value="wedding">Wedding</option>
+            <option value="gym">Gym</option>
+            <option value="yoga">Yoga</option>
+          </select>
+          <br>
+          <label for="clothtype"><i>Select your preferred cloth type:</i></label>
+          <select id="clothtype" name="clothtype">
+            <option value="wool">Wool</option>
+            <option value="cotton">Cotton</option>
+            <option value="linen">Linen</option>
+            <option value="denim">Denim</option>
+            <option value="silk">Silk</option>
+            <option value="polyester">Polyester</option>
+          </select>
+          <br>
+          <br><br>
+          <a href="{% url 'get' %}"><button type="button" >Get Outfit Suggestions</button></a>
+        </form>
+      </section>
+      <div id="outfit-suggestions"></div>
+    </section>
+  </main>
+  <footer>
+ 
+  </footer>
+  <script>
+    function scrollToStyle() {
+      var styleSection = document.getElementById('style-section');
+      styleSection.scrollIntoView({ behavior: 'smooth' });
+}
+function loadNewPage() {
+    // Change the URL to the desired new page
+    window.location.href = 'get.html';
+  }
+  function getOutfitSuggestions(event) {
+    // You can add form data processing or API calls here
+    console.log('Fetching outfit suggestions...');
+}
+ </script>
+ 
+  
+</body>
+</html>

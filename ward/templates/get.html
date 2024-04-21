@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outfit Suggestions - Wardrobe AI</title>
+  <link rel="stylesheet" href="{% static 'get.css' %}">
+</head>
+<body>
+  <header>
+    <h1><i>Outfit Suggestions - Wardrobe AI</i></h1>
+  </header>
+  <main>
+    <section class="outfit-suggestions">
+      <h2>Your AI-generated Outfit Suggestions</h2>
+      <div id="outfit-suggestions-container">
+    </div>
+    </section>
+    
+    <img src="{% static value1 %}" alt="Upper body">
+    <img src="{% static value2 %}" alt="Lower body">
+  </main>
+  <footer>
+    <div class="back-to-home-box"> <a href="{% url 'index' %}"> <button>Back to Home</button></a>
+    </div>
+  </footer>
+</body>
+</html>
